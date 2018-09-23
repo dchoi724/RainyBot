@@ -1,0 +1,23 @@
+{
+  "name": "raintel",
+  "version": "1.0.0",
+  "description": "Notifies user about inclement weather via Discord",
+  "main": "raintel.js",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchoi724/raintel.git"
+  },
+  "author": "Daniel Choi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dchoi724/raintel/issues"
+  },
+  "homepage": "https://github.com/dchoi724/raintel#readme"
+}
