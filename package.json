@@ -4,7 +4,9 @@
   "description": "Notifies user about inclement weather via Discord",
   "main": "raintel.js",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "node-schedule-tz": "^1.2.1-4",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {},
   "scripts": {
