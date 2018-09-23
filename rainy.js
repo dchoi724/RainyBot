@@ -1,11 +1,8 @@
 const Discord = require('discord.js');
 const botconfig = require("./botconfig.json");
 const schedule = require('node-schedule-tz');
-const request = require("request");
-const client = new Discord.Client();
-
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-
+const client = new Discord.Client();
 
 client.login(botconfig.token);
 
