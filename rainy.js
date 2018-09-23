@@ -50,8 +50,8 @@ client.on('message', msg => {
 function checkWeather() {
 	let wkey = botconfig.weather;
 	let dailyCall = new schedule.RecurrenceRule();
-	dailyCall.hour = 16;
-	dailyCall.minute = 34;
+	dailyCall.hour = 7;
+	dailyCall.minute = 00;
 	dailyCall.tz = 'ET';
 
 	// call this once a day at 7:00AM ET
