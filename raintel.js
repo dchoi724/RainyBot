@@ -6,7 +6,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-
 // TODO: replace with persistent data
 let subscribers = new Array(); // global list of subscribers
 
@@ -18,22 +17,22 @@ client.on('message', msg => {
 	let prefix = botconfig.prefix;
 	let cmd = msg.content;
 
+	// obligatory ping test
 	if (cmd === `${prefix} ping`) {
 		msg.channel.send("pong");
 	}
+
+	// adds users to subscribers list
 	if (cmd === `${prefix} subscribe`) {
 		msg.channel.send(msg.author.username + " subscribed to PM rain alerts.");
 		subscribers.push(msg.author);
 	}
+	// filters user out from the subscribers array
 	if (cmd === `${prefix} unsubscribe`) {
 		msg.channel.send(msg.author.username + " unsubscribed from PM rain alerts.");
 		subscribers = subscribers.filter((value, index, arr) => value.id !== msg.author.id);
 	}
 });
-
-// array methods
-
-
 
 // actively PM users in subscribers list about weather
 
